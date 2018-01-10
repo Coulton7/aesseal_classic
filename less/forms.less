@@ -1,0 +1,224 @@
+
+@import 'variables.less';
+//--------------- GENERAL FORMS-----------------------------------------------------------
+
+.well{}
+.btn-large{}
+.btn-primary{}
+
+.contact-form, #FM-AESWEB, .view-entityform-general-contact, .entitytype-branch_disti_form-form{
+  .well; 
+}
+
+
+.entityform{
+    margin-bottom:10px !important;
+
+    input{
+        width:100%;
+    }
+
+    .form-radio{
+        width:auto;
+    }
+
+    .field-type-text, .form-type-select{
+        width:50%;
+        margin:0px;
+        float:left;
+        @media (max-width: 979px){
+            width:100%;
+        }
+
+        .control-label{
+            float:left;
+            width:30%;
+            padding-right:10px;
+        }
+
+        .controls{
+            width:65%;
+            float:left;
+        }
+    }
+
+    .field-type-text-long{
+        width:100%;
+        clear:left;
+    }
+
+    .control-group{ //needs review
+        margin-bottom:0px;
+    }
+
+    .control-group.form-type-radios{
+        overflow:visible;
+    }
+
+    .submissions-link{
+        margin-bottom:10px;
+    }
+
+    .form-actions{
+        padding:10px 0px 0px 0px; 
+        margin:10px 0px 10px 0px;
+        background-color:@grayLighter;
+    }
+}
+
+
+
+// PRODUCT ENQIRY
+
+.entitytype-product_enquiry_cloned_-form{
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: @grayLighter;
+  padding:10px;
+  padding-top:20px;
+  border-radius:5px;
+  border:1px solid #CCCCCC;
+  box-shadow: rgba(0, 0, 0, 0.14902) 0px 1px 3px;
+  overflow:hidden;
+
+  .field-type-text{
+
+    width:100%;
+  }
+  
+  h2{ // Hide block title
+    display:none;
+  }
+
+  .btn{
+
+    .btn-large;
+    .btn-primary;
+  }
+   @media (max-width: 550px){
+    width:80%
+   }
+}
+
+
+
+
+//COMMENT FORM
+
+.comment-form{
+  position:relative;
+ 
+  .control-label{
+    float:left;
+    width:10%;
+  }
+
+  .form-textarea-wrapper{
+    width:90%;
+    float:left;
+
+  }
+}
+
+
+
+//LOCATION FORM
+
+ //AUTOCOMPLETE ICONS
+
+html.js input.form-autocomplete{
+  background-position:100% 9px !important;
+ }
+
+
+ html.js input.form-autocomplete.throbbing{
+  background-position:100% -16px !important;
+ }
+
+ //entity form title hack
+
+  .view-id-entityform_general_contact h2{
+
+    display:none;
+  }
+
+// Select fix for IE 
+
+
+.entityform.form-type-select{
+  overflow: inherit !important;
+}
+
+
+//RESOURCE PAGE GATE FORM
+
+ .download-field-wrapper{
+
+  margin-top:55px;
+ }
+
+.field-name-field-download-form{
+
+    width:90%;
+
+
+  h2{
+
+    margin-top:0px;
+  }
+
+  .entity h2{
+    display:none;
+  }
+
+  form{
+    .well;
+    color:@white;
+    background-color:@blue;
+  }
+  
+  .entityform{
+
+    .form-actions{
+      margin-bottom:0px;
+      background-color:@blue;
+      text-align:center;
+      .btn{
+        font-weight:bold;
+        width:70%;
+        height:40px;
+      }
+    }
+
+    .field-type-text, .form-type-select{
+      width:100%;
+    }
+  }
+}
+
+.bef-checkboxes{
+   width:100%;
+
+   label, input{
+      display:inline;
+    }
+ }
+
+ //THUMBNAIL SHADOW
+
+.views-field-field-thumbnail, .field-name-field-thumbnail{
+
+img{
+border: 1px solid #e5e5e7;
+
+box-shadow: rgba(0,0,0,0.14902) 0px 0px 1px;
+}
+
+}
+
+.node .field-name-field-thumbnail{
+margin-bottom:20px;
+text-align:center;
+
+}

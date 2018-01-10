@@ -1,0 +1,97 @@
+
+@import 'variables.less';
+
+// -------------EDITOR STYLES - available to users in the wysiwig ------------------------
+
+
+.pullout{
+
+  background-color: @grayLighter;
+  padding:10px;
+  color:@blue;
+  border-radius:5px;
+  display:block;
+  margin:20px 25px 20px 15px;
+  border:1px solid #CCCCCC;
+  box-shadow: rgba(0, 0, 0, 0.14902) 0px 1px 3px;
+  overflow:hidden;
+
+  p{
+    padding:10px;
+  }
+
+  img{
+    margin:0px 10px 0px 0px !important;
+  }
+}
+
+
+ .blue-box{
+
+  .pullout;
+  background-color:@blue;
+  color:@white;
+  margin:0px;
+}
+
+.gray-box{
+
+  .pullout;
+  background-color:@gray;
+  color:@white;
+  margin:0px;
+}
+
+
+.light-gray-box{
+
+    .pullout;
+  background-color:@grayLighter;
+  margin:0px;
+}
+
+#main-content .blue-box, #main-content .gray-box{
+
+  margin:20px 25px 20px 15px;
+
+}
+
+
+
+.outline-box{
+  background-color:@grayLighter;
+  margin:0px;
+  padding:10px 10px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.14902) 0px 0px 1px;
+
+  button{
+    font-size:14px;
+    padding:5px 10px 5px 10px;
+    }
+
+}
+
+blockquote{
+
+  text-align:center;
+  color:@blue;
+  border:none;
+  padding-top:22px;
+  padding-left:45px;
+ // width:75%;
+  margin-left:auto;
+  margin-right:auto;
+  background-image:url('http://www.aesseal.com/sites/all/themes/aesseal_classic/images/blockquote-top.png');
+  background-position: top left;
+  background-repeat: no-repeat;
+
+  p:last-child{
+    background-image:url('http://www.aesseal.com/sites/all/themes/aesseal_classic/images/blockquote-bottom.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    padding-bottom:34px;
+    padding-right:10px;
+    margin-top:15px;
+  }
+}
+

@@ -1,0 +1,67 @@
+name = AESSEAL Classic
+description = Same responsive taste, 100% less style
+core = 7.x
+base theme = bootstrap
+
+regions[navigation]     = 'Navigation'
+regions[secondary_navigation] = 'Secondary Navigation'
+regions[wave_title] 	= 'Wave Title'
+regions[header]         = 'Top Bar'
+regions[social_links]	= 'Social'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[widget_block]	= 'Widget Area'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[tab_first]   = 	'Front Page Tab 1'
+regions[tab_second]   = 	'Front Page Tab 2'
+;regions[front_bottom_banner] = 'Front Page Bottom Feature'
+regions[front_bottom_left] = 'Front page Bottom Left'
+regions[front_bottom_email] = 'Front page Bottom Right Email'
+regions[front_bottom_phone] = 'Front page Bottom Right Phone'
+regions[trademark]   = 'Trademark'
+regions[footer_left]  = 'Footer Left'
+regions[footer_right]  = 'Footer Right'
+regions[resource_form]	= 'Resource Form'
+
+
+stylesheets[all][] = 'css/style.css'
+stylesheets[all][] = 'css/chosen.css'
+
+
+scripts[] = 'bootstrap/js/bootstrap-affix.js'
+scripts[] = 'bootstrap/js/bootstrap-alert.js'
+scripts[] = 'bootstrap/js/bootstrap-button.js'
+scripts[] = 'bootstrap/js/bootstrap-carousel.js'
+scripts[] = 'bootstrap/js/bootstrap-collapse.js'
+scripts[] = 'bootstrap/js/bootstrap-dropdown.js'
+scripts[] = 'bootstrap/js/bootstrap-modal.js'
+scripts[] = 'bootstrap/js/bootstrap-tooltip.js'
+scripts[] = 'bootstrap/js/bootstrap-popover.js'
+scripts[] = 'bootstrap/js/bootstrap-scrollspy.js'
+scripts[] = 'bootstrap/js/bootstrap-transition.js'
+scripts[] = 'bootstrap/js/bootstrap-typeahead.js'
+scripts[] = 'bootstrap/js/bootstrap-tab.js'
+scripts[] = 'js/jquery.validate.min.js'
+scripts[] = 'js/additional-methods.js'
+scripts[] = 'js/respond.min.js'
+scripts[] = 'js/aesseal.js'
+scripts[] = 'js/chosen.jquery.min.js'
+scripts[] = 'js/contactustext.js'
+
+
+settings[toggle_name] = 0
+settings[toggle_search] = 1; 
+settings[cdn_bootstrap] = 0;
+
+
+
+multipliers[mobile][] = 1.5x
+multipliers[mobile][] = 2x
+
+
+breakpoints[desktop] = only screen and (min-width: 978px)
+breakpoints[laptop] = (min-width: 768px)
+breakpoints[tablet] = (min-width: 481px)
+breakpoints[phones] = (min-width: 0px)
+breakpoints[Empty srcset] = 

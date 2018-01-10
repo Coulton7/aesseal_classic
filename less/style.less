@@ -1,0 +1,20 @@
+// Media query variables.
+@mobile:  ~"(max-width: 767px)";
+@tablet:  ~"(min-width: 768px) and (max-width: 979px)";
+@normal:  ~"(min-width: 980px) and (max-width: 1199px)";
+@wide:    ~"(min-width: 1200px)";
+
+// Bootstrap library.
+@import 'bootstrap.less';
+@import 'responsive.less';
+
+// Base-theme overrides. Includes sidebar styling over-rides + overrides for the default bootstrap menu styling
+@import 'overrides.less';
+
+// Theme specific.
+@import 'header.less'; // Everything above the page title
+@import 'content.less'; //The majority of the theme specific styling lives here, including section specific stuff like news/resources/product pages
+@import 'forms.less'; //All the entity-form specific styles
+@import 'footer.less'; 
+@import 'front.less'; // Front-page specific styles
+@import 'editor.less'; // Styles available to admins/site editors in the WYSIWIG

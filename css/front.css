@@ -1,0 +1,173 @@
+/*---------------
+
+
+Styling for the front page
+
+Notes:
+
+The widget block (the six blue boxes on the homepage) were designed originally to mimic the old sites layout
+unfortunatley this means they're using some non-standard breakpoints to accomodate the old design on mobile and tablet. 
+
+
+
+CONTENTS
+
+SITE HEADING ADJUSTMENT
+
+
+
+
+
+--*/
+.front-content h1 {
+  text-align: center;
+  color: #dd1e25;
+}
+.front-page .widgetblock a {
+  color: #ffffff;
+}
+.front-page .widgetblock h3 {
+  color: #ffffff;
+  min-height: 48px;
+  margin: 0px;
+  padding-top: 5px;
+  display: block;
+}
+@media (max-width: (min-width: 980px) and (max-width: 1199px)) and (min-width: (min-width: 768px) and (max-width: 979px)) {
+  .front-page .widgetblock h3 {
+    font-size: 16.1px;
+  }
+}
+.front-page .widgetblock .panel-pane {
+  text-align: center;
+  background-color: #264a7e;
+  margin-bottom: 20px;
+  padding: 0px;
+  height: 200px;
+  box-shadow: rgba(0, 0, 0, 0.14902) 0px 0px 2px;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.2s;
+}
+.front-page .widgetblock .panel-pane:hover {
+  transition: background-color 0.2s;
+}
+.front-page .widgetblock .panel-pane.bottom {
+  border: none;
+  box-shadow: none;
+  height: auto;
+  background: transparent;
+  background-color: #f5f5f5;
+}
+.front-page .widgetblock .panel-pane.bottom img {
+  float: left;
+}
+@media (max-width: 979px) and (min-width: 768px) {
+  .row-fluid .widgetblock.offset1:first-child {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 979px) and (min-width: 767px) {
+  .row-fluid .widgetblock {
+    width: 100% !important;
+  }
+}
+@media (max-width: 767px) and (min-width: 545px) {
+  .row-fluid .widgetblock {
+    width: 100%;
+  }
+  .row-fluid .widgetblock .panel-pane:first-child {
+    margin-right: 2%;
+  }
+  .row-fluid .widgetblock .panel-pane {
+    width: 47%;
+    float: left;
+  }
+}
+@media (max-width: 545px) {
+  .row-fluid .widgetblock .panel-pane {
+    height: 100px;
+  }
+  .row-fluid .widgetblock .panel-pane h3 {
+    width: 48%;
+    float: left;
+  }
+  .row-fluid .widgetblock .panel-pane img {
+    max-height: 100%;
+    width: 48%;
+    float: right;
+  }
+  .row-fluid .widgetblock .panel-pane .play-button {
+    height: 100px;
+    width: 100%;
+    background: url('http://www.aesseal.com/sites/all/themes/aesseal_classic/images/play-button.png') no-repeat 95% 55%;
+    position: absolute;
+  }
+}
+.view-global-national-news .view-content {
+  overflow: hidden;
+}
+.view-global-national-news .views-field-field-image {
+  padding-bottom: 10px;
+}
+.tab-region .tab-header {
+  background-color: #f5f5f5;
+  border-bottom: 1px #b5b6b9 solid;
+  padding-top: 30px;
+  position: relative;
+}
+.tab-region .nav-tabs {
+  padding-right: 30px;
+  margin-bottom: 0px;
+  position: absolute;
+  bottom: -1px;
+  border-bottom: 1px #b5b6b9 solid;
+  margin-left: 10px;
+  background-color: #f5f5f5;
+}
+.tab-region .nav-tabs a {
+  background-color: #b5b6b9;
+  border: 1px solid #b5b6b9;
+  color: #1c2f55;
+  padding-left: 40px;
+  padding-right: 40px;
+  cursor: pointer;
+}
+@media (max-width: 979px) {
+  .tab-region .nav-tabs a {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.tab-region .nav-tabs a:not(.active) a {
+  transition: background-color 0.2s;
+  transition: color 0.2s;
+}
+.tab-region .nav-tabs a:not(.active) a:hover {
+  background-color: #1c2f55;
+  color: #FFF;
+  transition: background-color 0.2s;
+  transition: color 0.2s;
+}
+.tab-region .nav-tabs .active a {
+  background-color: #FFFFFF;
+  color: #1c2f55;
+  border: 1px solid #b5b6b9;
+  border-bottom-color: transparent;
+}
+.tab-region .pagination {
+  clear: both;
+  margin-bottom: 5px;
+}
+.CTA-fullwidth {
+  padding: 20px 0px 30px 0px;
+  text-align: center;
+}
+.CTA-fullwidth .btn {
+  width: 300px;
+  margin-bottom: 10px;
+}
+.region-front-bottom-banner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

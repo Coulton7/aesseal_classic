@@ -1,0 +1,597 @@
+// Bootstrap variables.
+@import 'variables.less';
+@import 'bootstrap.less';
+
+
+
+// Border Radius
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+// Drop shadows.
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow;
+     -moz-box-shadow: @shadow;
+          box-shadow: @shadow;
+}
+// Box sizing.
+.box-sizing(@boxmodel) {
+  -webkit-box-sizing: @boxmodel;
+     -moz-box-sizing: @boxmodel;
+          box-sizing: @boxmodel;
+}
+
+.btn-large{
+
+
+}
+
+.img-responsive{}
+
+html {
+
+
+-webkit-font-smoothing: antialiased; 
+
+  &.overlay-open .navbar-fixed-top {
+    z-index: 400;
+  }
+  &.js {
+    // Collapsible fieldsets.
+    fieldset.collapsed {
+     height: auto;
+    }
+    // Throbbers.
+    input.form-autocomplete {
+      background-position: 100% 8px; /* LTR */
+      background-repeat: no-repeat;
+    }
+    input.throbbing {
+      background-position: 100% -13px; /* LTR */
+    }
+  }
+}
+body {
+  // Bootstrap manually sets line heights, this should be relative (em) to the
+  // font size, not manually set.
+  &, h1, h2, h3, h4, h5, h6 {
+    line-height: 1.5em;
+  }
+  @media @mobile {
+    // Fix horizontal scrolling on iOS devices.
+    // http://drupal.org/node/1870076
+    position: relative;
+  }
+  @media @normal, @wide {
+   
+  }
+  // Core admin toolbar.
+  &.toolbar .navbar-fixed-top {
+   top: 30px;
+  }
+  &.toolbar-drawer .navbar-fixed-top {
+   top: 65px;
+  }
+  &.admin-expanded.admin-vertical.admin-nw .navbar,
+  &.admin-expanded.admin-vertical.admin-sw .navbar {
+    margin-left: 260px;
+  }
+  div#admin-toolbar {
+    z-index: 500;
+  }
+  @media @normal, @wide {
+    &.toolbar {
+  
+    }
+    &.toolbar-drawer {
+ 
+    }
+  }
+  // Admin_menu toolbar.
+  #admin-menu {
+    .box-shadow(none);
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    z-index: 1100;
+    .dropdown li {
+      line-height: normal;
+    }
+  }
+  &.admin-menu {
+    html & {
+      margin-top: 28px !important;
+    }
+    .navbar-fixed-top {
+      top: 28px;
+    }
+  }
+}
+
+
+// Element invisible fix
+.element-invisible {
+  margin: 0;
+  padding: 0;
+  width: 1px;
+}
+
+// Branding.
+.navbar .logo {
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-left:25px;
+}
+#site-name {
+  line-height: 1;
+  margin: 0;
+}
+
+// Page header.
+.page-header {
+  margin-top: 0;
+  margin-bottom:0px;
+  border:none;
+
+}
+
+// Blocks
+.block {
+  h2.block-title {
+    margin-top: 0;
+  }
+}
+
+// Search form.
+form#search-block-form {
+  margin: 0;
+}
+.navbar #block-search-form {
+  float: right;
+  margin: 5px 0 5px 5px;
+  @media @mobile, @tablet {
+    float: none;
+  }
+}
+fieldset.search-advanced {
+  padding-bottom: 1.5em;
+  margin-top: 1em;
+}
+.navbar-search .control-group {
+  margin-bottom:0px;
+}
+
+// Action Links
+ul.action-links {
+  margin-bottom: 2em;
+  li {
+    display: inline;
+    padding-right: 1.5em;
+  }
+  [class^="icon-"], [class*=" icon-"] {
+    padding-right: 0.5em;
+  }
+}
+
+// Form elements.
+input, textarea, select, .uneditable-input {
+  max-width: 100%;
+  width: auto;
+}
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+  .box-sizing(border-box);
+  height: auto;
+}
+input.error {
+  color: @errorText;
+  border-color: @errorBorder;
+}
+.form-type-checkbox input, .form-type-radio input {
+  float: left;
+}
+.form-actions{
+  clear: both;
+}
+.resizable-textarea textarea {
+  .border-radius(~"4px 4px 0 0");
+}
+.help-block, .control-group .help-inline {
+  color: @placeholderText;
+  font-size: 12px;
+  margin: -8px 0 10px;
+  padding: 0 3px;
+  .description + &,
+  .checkbox + &,
+  .form-type-checkbox + &,
+  .form-type-radio + &,
+  .form-file + &,
+  .resizable-textarea + & {
+    margin-top: 0;
+  }
+}
+
+.input-append {
+  .box-sizing(border-box);
+  padding-right: 40px;
+  width: 100%;
+  input, textarea, select, .uneditable-input {
+    width: 100% !important;
+  }
+}
+
+// Inline containers.
+.container-inline div, .container-inline label {
+  display: block;
+}
+
+// Error containers.
+div.error,
+table tr.error {
+  background-color: @errorBackground;
+  color: @errorText;
+}
+.control-group.error {
+  background: none;
+  label, .control-label {
+    color: @errorText;
+    font-weight: 600;
+  }
+  input, textarea, select, .uneditable-input {
+    color: @errorText;
+    border: 1px solid @inputBorder;
+  }
+  .help-block, .help-inline {
+    color: @placeholderText;
+  }
+}
+
+// Lists
+ul li.collapsed,
+ul li.expanded,
+ul li.leaf {
+  list-style: none;
+  list-style-image: none;
+}
+
+// Vertical tabs.
+.vertical-tabs {
+  .form-type-textfield input {
+    .box-sizing(inherit);
+    width: auto;
+  }
+  .form-item{
+    margin: 1em 0;
+  }
+}
+
+// Submitted
+.submitted {
+  margin-bottom: 1em;
+  font-style: italic;
+  font-weight: normal;
+  color: #777;
+}
+
+// Password strength indicator.
+.password-strength {
+  width: 17em;
+  float: right;  /* LTR */
+  margin-top: 1.4em;
+}
+.password-strength-title {
+  display: inline;
+}
+.password-strength-text {
+  float: right; /* LTR */
+  font-weight: bold;
+}
+.password-indicator {
+  background-color: darken(@grayLighter, 2%);
+  height: 0.3em;
+  width: 100%;
+  div {
+    height: 100%;
+    width: 0%;
+    background-color: @green;
+  }
+}
+input.password-confirm,
+input.password-field {
+  width: 16em;
+  margin-bottom: 0.4em;
+}
+div.password-confirm {
+  float: right;  /* LTR */
+  margin-top: 1.5em;
+  visibility: hidden;
+  width: 17em;
+}
+div.form-item div.password-suggestions {
+  padding: 0.2em 0.5em;
+  margin: 0.7em 0;
+  width: 38.5em;
+  border: 1px solid #B4B4B4;
+}
+div.password-suggestions ul {
+  margin-bottom: 0;
+}
+.confirm-parent,
+.password-parent {
+  clear: left; /* LTR */
+  margin: 0;
+  width: 36.3em;
+}
+
+// Progress bar.
+.progress-wrapper .progress {
+  margin-bottom: 10px;
+  .bar {
+    border: 0 none;
+    margin: 0;
+  }
+}
+
+// Views AJAX pager.
+.pagination ul > li > a {
+  &.progress-disabled {
+    float: left;
+  }
+  .throbber {
+    margin: 0 -0.25em 0 0.5em;
+    position: relative;
+    top: 1px;
+  }
+}
+
+// ------------------------AES SPECIFIC STYLES START HERE -------------------//
+
+//--------------------------GENERAL FIXES----------------//
+
+
+//fix for chrome disapearing menu bug
+
+html, body {height:100%;} 
+
+//Site wrapper
+
+ #wrap{
+  z-index:1;
+  position:relative;
+  max-width:1170px;
+  margin-left:auto;
+  margin-right:auto;
+ }
+
+ //Horrible spacer for floating collapse problem
+
+.spacer{
+
+  clear:both;
+}
+
+ // Remove padding on mobile views for body but add it to main container (gives full width header for anything <1200px
+
+@media (max-width: 767px){
+  
+  body {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .main-container{
+    padding-left:20px;
+    padding-right:20px;
+  }
+}
+
+// Add background image shadow either side of the main body for >1200px display
+
+@media (min-width: 1170px){
+  body {
+    background:url('http://www.aesseal.com/sites/all/themes/aesseal_classic/images/background-shadow.png') center top repeat-y;
+  }
+
+  .main-container{
+       max-width:1127px;
+       padding-left:20px;
+       padding-right:20px;
+  }
+}
+
+
+.tab-container{
+
+  padding-top:30px;
+}
+
+  .widget-wrap{
+  
+     background-color:@grayLighter;
+     height:inherit;
+     margin-top:20px;
+  }
+
+
+// Remove text shadow from list links
+  li a{
+
+    text-shadow:none !important;
+    font-weight:normal ;
+  }
+
+
+//Page heading style adjustment -JF
+
+h1{
+
+font-size:@baseFontSize * 2.40;
+
+  @media (max-width: 767px){
+
+font-size:@baseFontSize * 2.6;
+}
+
+
+}
+
+h2{
+
+  color:@blue;
+  font-size: @baseFontSize * 1.25;
+  font-weight:normal;
+  margin-bottom:10px;
+}
+
+h3{
+
+  color:@blue;
+  font-size: @baseFontSize * 1.25;
+  font-weight:normal;
+  margin-top:20px;
+}
+
+
+// BUTTON COLORS
+
+.btn{
+
+  background-color: hsl(239, 3%, 91%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e7e7e8", endColorstr="#e7e7e8");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#e7e7e8), to(#e7e7e8));
+  background-image: -moz-linear-gradient(top, #e7e7e8, #e7e7e8);
+  background-image: -ms-linear-gradient(top, #e7e7e8, #e7e7e8);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e7e7e8), color-stop(100%, #e7e7e8));
+  background-image: -webkit-linear-gradient(top, #e7e7e8, #e7e7e8);
+  background-image: -o-linear-gradient(top, #e7e7e8, #e7e7e8);
+  background-image: linear-gradient(#e7e7e8, #e7e7e8);
+  border-color: #e7e7e8 #e7e7e8 hsl(239, 3%, 91%);
+  color: @blue;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.00);
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.btn-primary{
+
+  background-color: hsl(360, 76%, 50%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e01e1e", endColorstr="#e01e1e");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#e01e1e), to(#e01e1e));
+  background-image: -moz-linear-gradient(top, #e01e1e, #e01e1e);
+  background-image: -ms-linear-gradient(top, #e01e1e, #e01e1e);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e01e1e), color-stop(100%, #e01e1e));
+  background-image: -webkit-linear-gradient(top, #e01e1e, #e01e1e);
+  background-image: -o-linear-gradient(top, #e01e1e, #e01e1e);
+  background-image: linear-gradient(#e01e1e, #e01e1e);
+  border-color: #e01e1e #e01e1e hsl(360, 76%, 50%);
+  color: #FFF;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.00);
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+//--- NAVBAR RESET
+
+.navbar-inner{
+
+  padding-left:0px;
+  padding-right:0px;
+  background:transparent;
+  border: none;
+  margin-bottom: 0px;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  filter:none;
+}
+
+
+// WELL BORDER RADIUS RESET
+
+.well{
+    border-radius: 0px;
+}
+
+
+//----------------------- BREADCRUMBS ---------------------------------------
+
+
+.breadcrumb{
+  background-color:transparent;
+  display:inline;
+}
+
+.breadcrumb-container{
+  border-bottom:1px solid @grayLighter;
+  margin-bottom:10px;
+  padding-bottom:10px;
+}
+
+
+// -------------------SIDEBARS--------------------------------------------
+
+
+.region-sidebar-first{
+  background-color:transparent !important;
+  border:none;
+  padding-left:0px;
+  padding-top:10px;
+
+    .block{
+        margin-bottom:10px;
+        padding-bottom:10px;
+    }
+
+
+    .leaf {
+        border-top: 1px dotted @gray;
+        padding:5px 0px 0px 0px;
+    }
+  
+    .contextual-links-region {
+      margin-bottom:20px;
+    }
+    
+    li.active a {
+      color:@blue;
+  }
+}
+
+//INDENT STYLE FOR SECOND TIER MENU ITEMS
+
+.indent{
+  padding-left:10px;
+}
+
+
+//-----------------------RIGHT SIDEBAR--------------------
+
+.region-sidebar-second{
+
+  padding-top:10px;
+
+  .block{
+    margin-bottom:10px;
+    padding-bottom:10px;
+
+  }
+
+  .view-content h3{
+    padding-top:10px;
+    border-top: 1px @gray dotted;
+
+  }
+
+  .views-field-title{
+    padding-bottom: 5px; 
+  }
+}
+
+
+.fixed{
+position:fixed;
+}

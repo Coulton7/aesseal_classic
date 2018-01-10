@@ -1,0 +1,142 @@
+// Insert your styling here.
+
+
+
+#wrap { //wraps the header and main content, negative margin is to enable sticky footer. 
+  min-height: 100%;
+  float:none;
+  margin-bottom:-152px;
+  z-index:0;
+
+}
+
+
+// keeps footer stuck to the bottom of the page. 
+.footer-offset{
+  height:152px;
+}
+
+
+
+.footer{
+  border:none;
+  text-align:center;
+  background-color:@gray;
+  clear:both;
+  padding-bottom:0;
+  display:block;
+  overflow:hidden;
+  text-align:center;
+  z-index:1;
+  opacity: .99;
+  img{
+    margin-left:10px;
+    margin-right:10px;
+  }
+
+  a{
+    text-decoration:underline;
+  }
+}
+
+
+.region-footer-left{
+
+  text-align:left;
+    padding-left:20px;
+  a{
+    color:@grayDark;
+  }
+
+}
+
+.region-footer-right{
+
+  text-align:right;
+  padding-right:20px;
+
+
+}
+  
+
+.footer-bottom{
+    color:@white;
+}
+
+.footer-top{
+  background-color: @grayLight;
+  border-top:1px solid white;
+  padding-top:20px;
+}
+
+
+@media (max-width: 979px){
+    .navbar-fixed-top{
+        position:fixed;
+    }
+}
+
+@media (max-width: 1200px){
+    .footer{
+        margin-left:0px !important;
+        margin-right:0px !important;
+        width:100%;
+    }
+}
+
+@media (min-width:1170px) and (max-width: 1200px){
+
+.footer{
+
+width:1170px;
+  margin-left:auto !important;
+    margin-right:auto !important;
+
+}
+}
+
+
+
+//MOBILE
+
+@media (max-width: 979px){
+
+.footer{
+  overflow:visible;
+  height:auto;
+
+ 
+.footer-top{
+  padding-top:0px;
+  
+
+     .span6{
+
+    height:auto;
+  }
+  }
+
+  .region-bottom{
+    color:@white;
+    padding-bottom:10px;
+  }
+}
+
+
+
+  .footer-top, .footer-bottom, .region-footer-left, .region-footer-right{
+
+    padding:0px;
+    margin:0px !important;
+    text-align:center;
+  }
+
+  .footer .span6{
+
+    width:100%;
+    color:@blue;
+    padding-left:10px;
+    margin-left:0px;
+  }
+
+}

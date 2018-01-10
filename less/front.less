@@ -1,0 +1,226 @@
+
+@import 'variables.less';
+
+
+/*---------------
+Styling for the front page
+
+Notes:
+
+The widget block (the six blue boxes on the homepage) were designed originally to mimic the old sites layout
+unfortunatley this means they're using some non-standard breakpoints to accomodate the old design on mobile and tablet. 
+*/
+
+//Site heading
+
+.front-content h1{
+     text-align:center;
+     color:@red;
+}
+
+// --------------------WIDGET BLOCK -------------------------------
+
+.front-page .widgetblock{  
+  
+  a{
+    color:@white;
+  }
+  
+  h3{
+    color:@white;
+    min-height:48px;
+    margin:0px;
+    padding-top:5px;
+    display:block; 
+    @media(max-width:@normal) and (min-width:@tablet){
+      font-size: @baseFontSize * 1.15;
+    }
+  } 
+  
+  .oembed-content{  
+    text-align:center;
+   }
+
+  .panel-pane{
+    text-align:center;
+    background-color:#264a7e;
+    margin-bottom:20px;
+    padding: 0px;
+    height:200px;
+    box-shadow: rgba(0, 0, 0, 0.14902) 0px 0px 2px;
+    position:relative;
+    overflow:hidden;
+    transition:background-color 0.2s;
+    &:hover{
+     transition:background-color 0.2s ;
+    }
+  }
+
+  .panel-pane.bottom{
+    border:none;
+    box-shadow:none;
+    height:auto;
+    background:transparent;
+    background-color:@grayLighter;   
+    img{
+        float:left;
+      }
+    }
+  }
+  
+
+//------------ADJUSTMENTS FOR TABLET AND MOBILE, PREVENTS TINY WIDGETS - this doesn't use the standard breakpoints (sorry!)
+
+
+//Margin fix to stop widget misaligment at tablet upper breakpoint
+
+@media (max-width: 979px) and (min-width: 768px){
+
+  .row-fluid .widgetblock.offset1:first-child {
+    margin-left:0px;
+  }
+}
+
+.row-fluid .widgetblock{
+
+  @media(max-width:979px) and (min-width:767px){
+   width:100% !important;
+  }
+
+  @media(max-width:767px) and (min-width:545px){
+
+    width:100%;
+
+    .panel-pane:first-child{
+      margin-right:2%;
+    }
+
+    .panel-pane{
+
+    width:47%;
+    float:left;
+    }
+  }
+
+
+//MOBILE (small)
+
+  @media(max-width:545px) {
+
+    .panel-pane{
+      height:100px;
+
+      h3{
+        width:48%;  
+        float:left;       
+      }
+
+      img{
+        max-height:100%;
+        width:48%;
+        float:right;
+      }
+
+      .play-button{
+        height:100px;
+        width:100%;
+        background:url('http://www.aesseal.com/sites/all/themes/aesseal_classic/images/play-button.png') no-repeat 95% 55%;
+        position:absolute;
+      }
+    }
+  }
+  }
+
+
+//-----------------FRONT PAGE NEWS BLOCK STYLING------------
+
+
+.view-global-national-news {
+  .view-content{
+
+    overflow:hidden;
+  }
+
+  .views-field-field-image{
+    padding-bottom:10px;
+  }
+}
+
+//-----------------NEWS TABS-----------------------------
+
+
+.tab-region{
+ .tab-header{
+
+    background-color:@grayLighter;
+    border-bottom:1px @grayLight solid;
+    padding-top:30px;
+    position:relative;
+  }
+
+
+  .nav-tabs{
+    padding-right:30px;
+    margin-bottom:0px;
+    position:absolute;
+    bottom:-1px;
+    border-bottom:1px @grayLight solid;
+    margin-left:10px;
+    background-color:@grayLighter;
+   
+    a{
+        background-color: @grayLight;
+        border: 1px solid @grayLight;
+        color:@blue;
+        padding-left:40px;
+        padding-right:40px;
+        cursor:pointer;
+        @media (max-width: 979px){
+            padding-left:20px;
+            padding-right:20px;
+        }
+      
+        &:not(.active) a{
+          transition: background-color 0.2s;
+          transition: color 0.2s;
+            &:hover{
+                background-color:@blue;
+                color:#FFF;
+                transition: background-color 0.2s;
+                transition: color 0.2s;
+            }
+         }    
+     }
+     
+  .active a{
+    background-color:#FFFFFF;
+    color:@blue;
+    border: 1px solid @grayLight;
+    border-bottom-color: transparent;
+  }  
+  }
+
+  .pagination{
+    clear:both;
+    margin-bottom:5px;
+  }
+}
+
+// CTA for front page
+
+.CTA-fullwidth{
+  padding:20px 0px 30px 0px;
+  text-align:center;
+
+  .btn{
+    width:300px;
+    margin-bottom:10px;
+  }
+}
+
+//-- Banner contains group logos
+
+.region-front-bottom-banner{
+  padding-top: 20px;
+  padding-bottom:20px;
+}
