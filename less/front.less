@@ -8,7 +8,7 @@ Styling for the front page
 Notes:
 
 The widget block (the six blue boxes on the homepage) were designed originally to mimic the old sites layout
-unfortunatley this means they're using some non-standard breakpoints to accomodate the old design on mobile and tablet. 
+unfortunatley this means they're using some non-standard breakpoints to accomodate the old design on mobile and tablet.
 */
 
 //Site heading
@@ -20,24 +20,24 @@ unfortunatley this means they're using some non-standard breakpoints to accomoda
 
 // --------------------WIDGET BLOCK -------------------------------
 
-.front-page .widgetblock{  
-  
+.front-page .widgetblock{
+
   a{
     color:@white;
   }
-  
+
   h3{
     color:@white;
     min-height:48px;
     margin:0px;
     padding-top:5px;
-    display:block; 
+    display:block;
     @media(max-width:@normal) and (min-width:@tablet){
       font-size: @baseFontSize * 1.15;
     }
-  } 
-  
-  .oembed-content{  
+  }
+
+  .oembed-content{
     text-align:center;
    }
 
@@ -61,13 +61,13 @@ unfortunatley this means they're using some non-standard breakpoints to accomoda
     box-shadow:none;
     height:auto;
     background:transparent;
-    background-color:@grayLighter;   
+    background-color:@grayLighter;
     img{
         float:left;
       }
     }
   }
-  
+
 
 //------------ADJUSTMENTS FOR TABLET AND MOBILE, PREVENTS TINY WIDGETS - this doesn't use the standard breakpoints (sorry!)
 
@@ -111,8 +111,8 @@ unfortunatley this means they're using some non-standard breakpoints to accomoda
       height:100px;
 
       h3{
-        width:48%;  
-        float:left;       
+        width:48%;
+        float:left;
       }
 
       img{
@@ -124,7 +124,7 @@ unfortunatley this means they're using some non-standard breakpoints to accomoda
       .play-button{
         height:100px;
         width:100%;
-        background:url('http://www.aesseal.com/sites/all/themes/aesseal_classic/images/play-button.png') no-repeat 95% 55%;
+        background:url('../images/play-button.png') no-repeat 95% 55%;
         position:absolute;
       }
     }
@@ -167,7 +167,7 @@ unfortunatley this means they're using some non-standard breakpoints to accomoda
     border-bottom:1px @grayLight solid;
     margin-left:10px;
     background-color:@grayLighter;
-   
+
     a{
         background-color: @grayLight;
         border: 1px solid @grayLight;
@@ -179,7 +179,7 @@ unfortunatley this means they're using some non-standard breakpoints to accomoda
             padding-left:20px;
             padding-right:20px;
         }
-      
+
         &:not(.active) a{
           transition: background-color 0.2s;
           transition: color 0.2s;
@@ -189,15 +189,15 @@ unfortunatley this means they're using some non-standard breakpoints to accomoda
                 transition: background-color 0.2s;
                 transition: color 0.2s;
             }
-         }    
+         }
      }
-     
+
   .active a{
     background-color:#FFFFFF;
     color:@blue;
     border: 1px solid @grayLight;
     border-bottom-color: transparent;
-  }  
+  }
   }
 
   .pagination{

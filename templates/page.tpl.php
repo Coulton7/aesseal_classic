@@ -1,4 +1,4 @@
-<script type="text/javascript" src="<?php echo base_path(); ?>sites/all/themes/aesseal_classic/js/hubspot-progressive-profile.js"></script>
+<script type="text/javascript" src="../js/hubspot-progressive-profile.js"></script>
  
 
  <div id="wrap">

@@ -1,5 +1,5 @@
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-<script type="text/javascript" src="<?php echo base_path(); ?>sites/all/themes/aesseal_classic/js/hubspot-progressive-profile.js"></script>
+<script type="text/javascript" src="../js/hubspot-progressive-profile.js"></script>
 
 
   <header>

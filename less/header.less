@@ -1,5 +1,5 @@
 // Insert your styling here.
-// Change menu icon from static position (top of page) to fixed 
+// Change menu icon from static position (top of page) to fixed
 
 @import 'variables.less';
 
@@ -7,7 +7,7 @@
 /*
 
 This whole arrangement needs changing when we make the upgrade to bootstrap 3 (or 4) - for now it relies on the bootstrap carousel module
-which is not brilliant. The menu's also want simplifying down to a single menu which should reduce the need for so much nav element styling. 
+which is not brilliant. The menu's also want simplifying down to a single menu which should reduce the need for so much nav element styling.
 
 */
 
@@ -17,7 +17,7 @@ which is not brilliant. The menu's also want simplifying down to a single menu w
 
 /*
 
-A note on waves: As the aesseal web developer waves will be the bane of your existence. Luckily SVG is a thing which makes life a lot easier. 
+A note on waves: As the aesseal web developer waves will be the bane of your existence. Luckily SVG is a thing which makes life a lot easier.
 As soon as you're allowed to drop IE7 compatability you should switch to the SVG waves seen on componentseals.com
 
 */
@@ -25,11 +25,11 @@ As soon as you're allowed to drop IE7 compatability you should switch to the SVG
 .waveupper{ //Top Right, contains the logo
     height:140px;
     width:230px;
-    background-image:url('http://www.aesseal.com/sites/all/themes/aesseal_classic/images/headerwaveupper.png');
+    background-image:url('../images/headerwaveupper.png');
     background-repeat:no-repeat;
     background-position:top left;
     position:absolute;
-    left:0px; 
+    left:0px;
     z-index:1031;
     @media(max-width:979px){
         display:none;
@@ -45,13 +45,13 @@ As soon as you're allowed to drop IE7 compatability you should switch to the SVG
     z-index:1020;
     padding-top:10px;
     height:87px;
-    background-image:url('http://www.aesseal.com/sites/all/themes/aesseal_classic/images/headerwavelower.png');
+    background-image:url('../images/headerwavelower.png');
     background-repeat:no-repeat;
     background-position: bottom right;
-    
+
     .top-bar{
        padding-top:10px;
-           
+
         h1{
           line-height:1.2em;
       }
@@ -61,7 +61,7 @@ As soon as you're allowed to drop IE7 compatability you should switch to the SVG
 
 // NAVBAR ----------------//
 
-// there is a navbar reset in the overrides.less file. It basically sets all the backgrounds to transparent and kills off padding. 
+// there is a navbar reset in the overrides.less file. It basically sets all the backgrounds to transparent and kills off padding.
 
 
 #navbar{
@@ -69,10 +69,10 @@ As soon as you're allowed to drop IE7 compatability you should switch to the SVG
  margin:auto auto 0px auto;
  position:relative;
  z-index:1030;
- background-image:url('http://www.aesseal.com/sites/all/themes/aesseal_classic/images/black-trans.png');
+ background-image:url('../images/black-trans.png');
  left:-1px;
  -webkit-transform: translateZ(0); //Chrome weirdness Fix
-   
+
   a:hover{
     color:@white;
     text-decoration:underline;
@@ -97,15 +97,15 @@ As soon as you're allowed to drop IE7 compatability you should switch to the SVG
 }
 
  .block{
-   margin-right:20px; 
+   margin-right:20px;
   }
 
 
 //MOBILE
   @media (max-width: 979px){
-     
+
     width:100%;
-    background-color:@white; 
+    background-color:@white;
     background-image:none;
     position:static;
     .navbar-inner{
@@ -119,9 +119,9 @@ As soon as you're allowed to drop IE7 compatability you should switch to the SVG
         text-align:center;
         .leaf a{
          border-top:1px dotted @gray;
-        } 
+        }
      }
-    
+
     .block{
         float:none !important;
       }
@@ -129,14 +129,14 @@ As soon as you're allowed to drop IE7 compatability you should switch to the SVG
     .container{
         padding:0px 20px 0px 20px;
     }
-  
-    .nav li  a {     
+
+    .nav li  a {
       color:@grayDark;
        &:hover{
          background-color:@blue;
          color:@white;
     }
-    
+
     }
 
   .nav .active > a{
@@ -174,7 +174,7 @@ padding-top:10px;
  font-weight:normal; //boostrap override
 
  }
-  
+
   @media (max-width: 979px){
  clear:left;
   }
@@ -212,7 +212,7 @@ padding-top:10px;
 
 
 .block-lang-dropdown {
- 
+
   padding-top:5px;
   margin-bottom:0px;
   float:right;
@@ -235,13 +235,13 @@ padding-top:10px;
     }
   }
 
- 
+
   .controls{
     min-width:140px;
   }
 
   select{
-    background-color:@gray;  
+    background-color:@gray;
     border:@black;
     color:@white;
     height:30px;
@@ -249,7 +249,7 @@ padding-top:10px;
 
  form{
   margin:0px;
-  
+
   .dd_after, .ddTitle{
      background:transparent;
     }
@@ -265,7 +265,7 @@ padding-top:10px;
 
 
 .primary-nav{
-    
+
     #block-views-exp-search-aesseal-page{
         float:right;
         margin-right: 10px;
@@ -273,15 +273,15 @@ padding-top:10px;
             margin:20px auto 20px 10px;
         }
     }
-    
-    
+
+
     #views-exposed-form-search-aesseal-page{
         width:280px;
         padding-left:15px;
         margin-left:auto;
         margin-right:auto;
         margin:0px;
-  
+
         .views-exposed-widget{
             padding-right:5px;
             padding-top:5px;
@@ -302,7 +302,7 @@ padding-top:10px;
         }
 
         .form-text{
-            height:32px; 
+            height:32px;
             margin:0px;
             padding-bottom:5px;
         }
@@ -324,7 +324,7 @@ input.form-autocomplete{
     min-height:325px;
   }
 
-.view-id-clone_of_carousel_for_home{ //home page carousel is taller than other pages. 
+.view-id-clone_of_carousel_for_home{ //home page carousel is taller than other pages.
     min-height:370px;
 }
 
@@ -333,7 +333,7 @@ input.form-autocomplete{
     margin-right:auto;
     max-width:1170px;
     width:100%;
-    
+
     @media(min-width:979px){
         margin-bottom:-140px;
         position:relative;
@@ -341,7 +341,7 @@ input.form-autocomplete{
         right:1px;
         z-index:1000;
     }
-    
+
     @media(max-width:978px){
         display:none;
     }
@@ -359,7 +359,7 @@ input.form-autocomplete{
     background:none;
     color:@white;
     font-size:@baseFontSize;
-    width:38%; // sorry, but this just works right 
+    width:38%; // sorry, but this just works right
     .carousel-heading{
         color:@red;
         padding-bottom:15px;
@@ -371,23 +371,23 @@ input.form-autocomplete{
 }
 
 .carousel-fade{
-    
+
    .carousel-control {
       z-index: 2;
     }
   .carousel-inner{
-      
+
       @media (max-width: 979px){
       display:none;
     }
-  
+
     .item {
       opacity: 0;
       -webkit-transition-property: opacity;
       -moz-transition-property: opacity;
       -o-transition-property: opacity;
       transition-property: opacity;
-      
+
     }
 
     .active {
@@ -400,11 +400,11 @@ input.form-autocomplete{
       opacity: 0;
       z-index: 1;
     }
- 
+
     .next.left,
-    .prev.right { 
+    .prev.right {
       opacity: 1;
-    }  
+    }
   }
 }
 
@@ -420,28 +420,28 @@ input.form-autocomplete{
   }
 }
 
-// -----------------------PRODUCT GRID MEGAMENU STYLING 
+// -----------------------PRODUCT GRID MEGAMENU STYLING
 
 .menu-views{
   margin-left:10px;
 }
 
 .dropdown-menu{
-    
+
   -webkit-border-radius:0px;
   -moz-border-radius:0px;
   border-radius:0px;
   .view-header{
         padding:10px;
   }
-    
+
   .views-field-name{
     position:absolute;
-    background-image:url('http://www.aesseal.com/sites/all/themes/aesseal_classic/images/black-trans.png');
+    background-image:url('../images/black-trans.png');
     top:2px;
     line-height:20px;
     padding-left:10px;
-    
+
     a{
        display:block;
        width:170px;
