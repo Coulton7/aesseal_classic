@@ -1,9 +1,9 @@
 
-  <!-- <script src="sites/all/themes/aesseal_classic/js/lib/greensock/TweenMax.min.js" type=
+  <!-- <script src="../js/lib/greensock/TweenMax.min.js" type=
     "text/javascript"></script>
-    <script src="sites/all/themes/aesseal_classic/js/scrollmagic/minified/ScrollMagic.min.js" type=
+    <script src="../js/scrollmagic/minified/ScrollMagic.min.js" type=
     "text/javascript"></script>
-    <script src="sites/all/themes/aesseal_classic/js/scrollmagic/minified/plugins/animation.gsap.min.js"
+    <script src="../js/scrollmagic/minified/plugins/animation.gsap.min.js"
     type="text/javascript"></script> -->
 
 <link rel="stylesheet" href="sites/all/libraries/flexslider/flexslider.css" type="text/css">
@@ -26,7 +26,7 @@
   <div class="main-container container">
 
    <div class="row-fluid">
-    
+
 
 
     <div class="span12 front-content" id="main-content">
@@ -46,7 +46,7 @@
           <ul class="action-links"><?php print render($action_links); ?></ul>
         <?php endif; ?>
         <h1 class=""><?php print $title; ?></h1>
-    
+
         <?php print render($page['content']); ?>
 
       </div>
@@ -63,9 +63,9 @@
             <div class="row-fluid">
              <div class="span10 offset1 widgetblock">
                <?php print render($page['widget_block']); ?>
-             </div>     
+             </div>
 
-      </div> 
+      </div>
     </div>
   </div> <!-- ///////////////////////////// WIDGET FINISHES -->
 
@@ -81,10 +81,10 @@
                 <div class="span5">
                     <ul class="nav nav-tabs pull-right" data-tabs="tabs" id="tabs">
                         <?php if (!empty($page['tab_first'])): ?>
-                        <li class="active"><a href="#tab1" data-toggle="tab"><?php print t('Group News');?></a></li> 
+                        <li class="active"><a href="#tab1" data-toggle="tab"><?php print t('Group News');?></a></li>
                         <?php endif; ?>
                         <?php if (!empty($page['tab_second'])): ?>
-                        <li <?php if (empty($page['tab_first'])): ?> class="active"<?php endif; ?>><a href="#tab2" data-toggle="tab"><?php print t('Local News');?></a></li> 
+                        <li <?php if (empty($page['tab_first'])): ?> class="active"<?php endif; ?>><a href="#tab2" data-toggle="tab"><?php print t('Local News');?></a></li>
                         <?php endif; ?>
                     </ul>
                 </div>
@@ -122,12 +122,12 @@
             <div class="span3">
                 <?php print render($page['front_bottom_phone']); ?>
             </div>
-            <div class="span2">     
+            <div class="span2">
                 <?php print render($page['front_bottom_email']); ?>
         </div>
         </div>
     </div>
-    
+
     <div class="footer-offset front"></div>
 </div> <!-- WRAP -->
 
@@ -137,7 +137,7 @@
       <?php print render($page['trademark']); ?>
     </div>
   </div>
-   
+
   <div class="row-fluid footer-bottom">
     <div class="span4" >
       <?php print render($page['footer_left']); ?>
@@ -155,7 +155,7 @@
                     }); //initialize scrollmagic
 
 
-                  var scene = new ScrollMagic.Scene({ // Upper Wave out 
+                  var scene = new ScrollMagic.Scene({ // Upper Wave out
                     triggerElement:".widgetblock",
                     duration:500
 
@@ -164,4 +164,3 @@
                    // .addIndicators({name: "wavein------"})
                     .addTo(controller);
 </script> -->
-

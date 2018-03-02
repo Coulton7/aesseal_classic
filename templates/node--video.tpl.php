@@ -1,5 +1,5 @@
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-<script type="text/javascript" src="<?php echo base_path(); ?>sites/all/themes/aesseal_classic/js/hubspot-progressive-profile.js"></script>
+<script type="text/javascript" src="../js/hubspot-progressive-profile.js"></script>
 
 <script>
 $("#content-gate-entityform-edit-form").submit(function() {
@@ -13,7 +13,7 @@ $("#content-gate-entityform-edit-form").submit(function() {
 <script>
 $( document ).ready(function() {
   $('.field-name-field-thumbnail').hide();
-  
+
   if($('.field-name-field-download-form').length>0){
     $('.oembed').hide();
     $('.field-name-field-thumbnail').show();
@@ -88,9 +88,9 @@ $( document ).ready(function() {
 
 <div class="row-fluid">
   <div class="span6">
-    
-   
-    
+
+
+
     <div class="download-field-wrapper">
       <?php print render($content['field_thumbnail']);?>
   </div>

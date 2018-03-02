@@ -9,15 +9,15 @@
   <?php print $styles; ?>
   <!-- HTML5 element support for IE6-8 -->
   <!--[if lt IE 9]>
-    <script src="http://www.aesseal.com/sites/all/themes/aesseal_classic/js/html5.js"></script>
+    <script src="../js/html5.js"></script>
   <![endif]-->
 <!--IE7 conditional stylesheet-->
-<!--[if lte IE 7]> 
-    <link rel="stylesheet" type="text/css" href="<?php echo base_path(); ?>sites/all/themes/aesseal_classic/css/ie7-and-down.css" />
+<!--[if lte IE 7]>
+    <link rel="stylesheet" type="text/css" href="../css/ie7-and-down.css" />
 
 <![endif]-->
 
-  <?php print $scripts; ?> 
+  <?php print $scripts; ?>
 
   <script type="text/javascript">
 
@@ -35,9 +35,9 @@ $( document ).ready(function() {
 
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>-->
 
- 
-   
- 
+
+
+
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
 

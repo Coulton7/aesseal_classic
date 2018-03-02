@@ -1,7 +1,7 @@
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-<script type="text/javascript" src="<?php echo base_path(); ?>sites/all/themes/aesseal_classic/js/hubspot-progressive-profile.js"></script>
+<script type="text/javascript" src="../js/hubspot-progressive-profile.js"></script>
 
-  <header> 
+  <header>
     <?php print render($title_prefix); ?>
     <?php if (!$page && $title): ?>
       <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
@@ -16,7 +16,7 @@
       </span>
     <?php endif; ?>
   </header>
- 
+
 
   <div class="row-fluid">
 

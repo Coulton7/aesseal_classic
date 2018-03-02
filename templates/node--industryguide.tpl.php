@@ -1,5 +1,5 @@
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-<script type="text/javascript" src="<?php echo base_path(); ?>sites/all/themes/aesseal_classic/js/hubspot-progressive-profile.js"></script>
+<script type="text/javascript" src="../js/hubspot-progressive-profile.js"></script>
 
 
 
@@ -24,10 +24,10 @@ if($('#content-gate-entityform-edit-form--2').length==0 && $('.alert-error').len
       // It caused the gated content to show the download button before the form was filled in,
       // commenting out this line solved the issue.
       // - Ben. B 22/05/17
-      
+
      // $('.download-field-wrapper').show();
      $('.view-entityform-content-gate h2').text('Click below to Download');
-}}); 
+}});
 
 </script>
 
@@ -99,7 +99,7 @@ $( document ).ready(function() {
             print render($content);
         ?>
     </div>
-    
+
     <div class="span6">
         <?php print render($content['field_download_form']);?>
         <?php print render($content['field_hubspot_form']);?>
