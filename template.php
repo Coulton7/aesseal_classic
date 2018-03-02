@@ -9,7 +9,7 @@ function aesseal_classic_preprocess_node(&$variables) {
 
 
 function hook_preprocess_page(&$vars) {
-  drupal_add_js('<?php echo base_path(); ?>sites/all/themes/aesseal_classic/js/hubspot-progressive-profile.js', 'external');
+  drupal_add_js('../js/hubspot-progressive-profile.js', 'external');
 }
 
 
@@ -32,4 +32,4 @@ function THEMENAME_preprocess_node(&$variables, $hook) {
  * @file template.php
  */
 
-drupal_add_js('sites/all/themes/aesseal_classic/js/contactustext.js');
+drupal_add_js('../js/contactustext.js');
