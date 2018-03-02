@@ -100,7 +100,7 @@ SITE HEADING ADJUSTMENT
   .row-fluid .widgetblock .panel-pane .play-button {
     height: 100px;
     width: 100%;
-    background: url('http://www.aesseal.com/sites/all/themes/aesseal_classic/images/play-button.png') no-repeat 95% 55%;
+    background: url('../images/play-button.png') no-repeat 95% 55%;
     position: absolute;
   }
 }
