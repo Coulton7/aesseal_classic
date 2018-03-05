@@ -12,14 +12,14 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 <!--IE7 conditional stylesheet-->
-<!--[if lte IE 7]> 
-  <link rel="stylesheet" type="text/css" href="http://bigmac.aesseal.net/drupalfeeds5/sites/all/themes/james_bootstrap/css/ie7-and-down.css" />
+<!--[if lte IE 7]>
+  <link rel="stylesheet" type="text/css" href="http://www.aesseal.com/sites/all/themes/aesseal_classic/css/ie7-and-down.css" />
 
 <![endif]-->
 
-  <?php print $scripts; ?> 
+  <?php print $scripts; ?>
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-</head> 
+</head>
 
 <body class="<?php print $classes; ?>">
     <div class="main-container container">
@@ -79,11 +79,3 @@
   </div> <!-- /page -->
 
 </body>
-
-
-
-
-
-
-  
-
