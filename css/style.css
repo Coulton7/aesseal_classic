@@ -9871,6 +9871,9 @@ span.carousel-heading
 	font-size: 44.8px;
 	color: #1c2f55}
 
+.field-name-field-document{
+	padding-bottom: 15px;
+}
 
 .field-name-field-document a
 {
@@ -10967,7 +10970,7 @@ blockquote p:last-child
 	background-image: url('../images/blockquote-top-light.png');
 	line-height: 1.5em;
 	background-position: top left;
-	background-repeat: no-repeat;	
+	background-repeat: no-repeat;
 	border: none;
 	padding: 20px 0px 0px 50px;
 	margin-left: auto;
@@ -11165,7 +11168,7 @@ span.geo {
 @media (max-width: 767px) {
     #contact-icons-text {
         font-size: 0.5em;
-        margin-right: 40px;   
+        margin-right: 40px;
     }
 }
 
