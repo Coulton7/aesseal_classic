@@ -9871,10 +9871,6 @@ span.carousel-heading
 	font-size: 44.8px;
 	color: #1c2f55}
 
-.field-name-field-document{
-	padding-bottom: 15px;
-}
-
 .field-name-field-document a
 {
 	display: block;
@@ -10965,6 +10961,223 @@ blockquote p:last-child
 	padding: 0px 20px 50px 0px;
 	margin-top: 15px
 }
+
+/* Animated Responsive Image Grid by Mary Lou https://tympanus.net/codrops/2012/08/02/animated-responsive-image-grid/ */
+
+.ri-grid{
+	margin: 30px auto 30px;
+	position: relative;
+	height: auto;
+}
+
+.ri-grid ul {
+	list-style: none;
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* Clear floats by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.ri-grid ul:before,
+.ri-grid ul:after{
+	content: '';
+    display: table;
+}
+
+.ri-grid ul:after {
+    clear: both;
+}
+
+.ri-grid ul {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.ri-grid ul li {
+	-webkit-perspective: 400px;
+	-moz-perspective: 400px;
+	-o-perspective: 400px;
+	-ms-perspective: 400px;
+	perspective: 400px;
+	margin: 0;
+	padding: 0;
+	float: left;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	background: #000;
+}
+
+.ri-grid ul li a{
+	display: block;
+	outline: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #333;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+/* Grid wrapper sizes */
+.ri-grid-size-1{
+	width: 55%;
+}
+.ri-grid-size-2{
+	width: 100%;
+}
+.ri-grid-size-3{
+	width: 100%;
+	margin-top: 0px;
+}
+
+/* Shadow style */
+.ri-shadow:after,
+.ri-shadow:before{
+	content: "";
+	position: absolute;
+	z-index: -2;
+	bottom: 15px;
+	left: 10px;
+	width: 50%;
+	height: 20%;
+	max-width: 300px;
+	max-height: 100px;
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+.ri-shadow:after{
+	right: 10px;
+	left: auto;
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+	transform: rotate(3deg);
+}
+
+.ri-grid-loading:after,
+.ri-grid-loading:before{
+	display: none;
+}
+
+.ri-loading-image{
+	display: none;
+}
+
+.ri-grid-loading .ri-loading-image{
+	position: relative;
+	width: 30px;
+	height: 30px;
+	left: 50%;
+	margin: 100px 0 0 -15px;
+	display: block;
+}
+
+/* from epsilon test - mouse over and icon rules */
+
+.overlay-red{
+	background:rgba(221,30,37,.9);
+	left:0;
+	opacity:0;
+	position:absolute;
+	top:0;
+	-moz-transition: opacity,.3s;
+	-o-transition: opacity,.3s;
+	-webkit-transition: opacity,.3s;
+	transition:opacity,.3s;
+	height:100%;
+	width:100%;
+
+}
+
+.overlay-red:hover{
+	opacity: 1;
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0)
+}/*position of red overlay and visibility*/
+
+.gallery-box:hover img{
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2)
+}/*Makes the image slightly bigger*/
+
+.gallery-box:hover .overlay-red p {
+	opacity: 1;
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0)
+}/*makes them visible and puts it on pic*/
+
+
+.gallery p{
+	-moz-transform:translate3d(0,200%,0);
+	-ms-transform:translate3d(0,200%,0);
+	-webkit-transform:translate3d(0,200%,0);
+	transform:translate3d(0,200%,0);
+	color:#ffffff;
+	opacity:0;
+}/*hides the font awesome icon before hover effect*/
+
+.gallery img, .gallery p{
+	transition:all,.5s;
+	-moz-transition:all,.5s;
+	-o-transition:all,.5s;
+	-webkit-transition:all,.5s;
+}/*Transition speed*/
+
+.icon-frame{
+	width: 100%;
+	padding: 25%;
+}
+
+.icon-twitter:before{
+	content:"\f099";
+	font-family:"FontAwesome";
+	font-size: 10vw;
+}/*Calls the font awesome icopn*/
+
+.icon-instagram:before{
+	content:"\f16d";
+	font-family:"FontAwesome";
+	font-size: 10vw;
+}
+
+.icon-article:before{
+	content:"\f1ea";
+	font-family:"FontAwesome";
+	font-size: 10vw;
+}/*Calls the font awesome icopn*/
+
+
 .blockquote-light
 {
 	background-image: url('../images/blockquote-top-light.png');
@@ -10990,6 +11203,220 @@ blockquote p:last-child
 	border-bottom: 1px solid #e5e5e7;
 	margin: 0 -2px}
 
+	/* Animated Responsive Image Grid by Mary Lou https://tympanus.net/codrops/2012/08/02/animated-responsive-image-grid/ */
+
+	.ri-grid{
+		margin: 30px auto 30px;
+		position: relative;
+		height: auto;
+	}
+
+	.ri-grid ul {
+		list-style: none;
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	/* Clear floats by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+	.ri-grid ul:before,
+	.ri-grid ul:after{
+		content: '';
+	    display: table;
+	}
+
+	.ri-grid ul:after {
+	    clear: both;
+	}
+
+	.ri-grid ul {
+	    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+	}
+
+	.ri-grid ul li {
+		-webkit-perspective: 400px;
+		-moz-perspective: 400px;
+		-o-perspective: 400px;
+		-ms-perspective: 400px;
+		perspective: 400px;
+		margin: 0;
+		padding: 0;
+		float: left;
+		position: relative;
+		display: block;
+		overflow: hidden;
+		background: #000;
+	}
+
+	.ri-grid ul li a{
+		display: block;
+		outline: none;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-o-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		backface-visibility: hidden;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		-o-transform-style: preserve-3d;
+		-ms-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		-webkit-background-size: 100% 100%;
+		-moz-background-size: 100% 100%;
+		background-size: 100% 100%;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-color: #333;
+		-webkit-box-sizing: content-box;
+		-moz-box-sizing: content-box;
+		box-sizing: content-box;
+	}
+
+	/* Grid wrapper sizes */
+	.ri-grid-size-1{
+		width: 55%;
+	}
+	.ri-grid-size-2{
+		width: 100%;
+	}
+	.ri-grid-size-3{
+		width: 100%;
+		margin-top: 0px;
+	}
+
+	/* Shadow style */
+	.ri-shadow:after,
+	.ri-shadow:before{
+		content: "";
+		position: absolute;
+		z-index: -2;
+		bottom: 15px;
+		left: 10px;
+		width: 50%;
+		height: 20%;
+		max-width: 300px;
+		max-height: 100px;
+		box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+		-webkit-transform: rotate(-3deg);
+		-moz-transform: rotate(-3deg);
+		-ms-transform: rotate(-3deg);
+		-o-transform: rotate(-3deg);
+		transform: rotate(-3deg);
+	}
+	.ri-shadow:after{
+		right: 10px;
+		left: auto;
+		-webkit-transform: rotate(3deg);
+		-moz-transform: rotate(3deg);
+		-ms-transform: rotate(3deg);
+		-o-transform: rotate(3deg);
+		transform: rotate(3deg);
+	}
+
+	.ri-grid-loading:after,
+	.ri-grid-loading:before{
+		display: none;
+	}
+
+	.ri-loading-image{
+		display: none;
+	}
+
+	.ri-grid-loading .ri-loading-image{
+		position: relative;
+		width: 30px;
+		height: 30px;
+		left: 50%;
+		margin: 100px 0 0 -15px;
+		display: block;
+	}
+
+	/* from epsilon test - mouse over and icon rules */
+
+	.overlay-red{
+		background:rgba(221,30,37,.9);
+		left:0;
+		opacity:0;
+		position:absolute;
+		top:0;
+		-moz-transition: opacity,.3s;
+		-o-transition: opacity,.3s;
+		-webkit-transition: opacity,.3s;
+		transition:opacity,.3s;
+		height:100%;
+		width:100%;
+
+	}
+
+	.overlay-red:hover{
+		opacity: 1;
+		-moz-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}/*position of red overlay and visibility*/
+
+	.gallery-box:hover img{
+		-moz-transform: scale(1.2);
+		-ms-transform: scale(1.2);
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2)
+	}/*Makes the image slightly bigger*/
+
+	.gallery-box:hover .overlay-red p {
+		opacity: 1;
+		-moz-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}/*makes them visible and puts it on pic*/
+
+
+	.gallery p{
+		-moz-transform:translate3d(0,200%,0);
+		-ms-transform:translate3d(0,200%,0);
+		-webkit-transform:translate3d(0,200%,0);
+		transform:translate3d(0,200%,0);
+		color:#ffffff;
+		opacity:0;
+	}/*hides the font awesome icon before hover effect*/
+
+	.gallery img, .gallery p{
+		transition:all,.5s;
+		-moz-transition:all,.5s;
+		-o-transition:all,.5s;
+		-webkit-transition:all,.5s;
+	}/*Transition speed*/
+
+	.icon-frame{
+		width: 100%;
+		padding: 25%;
+	}
+
+	.icon-twitter:before{
+		content:"\f099";
+		font-family:"FontAwesome";
+		font-size: 10vw;
+	}/*Calls the font awesome icopn*/
+
+	.icon-instagram:before{
+		content:"\f16d";
+		font-family:"FontAwesome";
+		font-size: 10vw;
+	}
+
+	.icon-article:before{
+		content:"\f1ea";
+		font-family:"FontAwesome";
+		font-size: 10vw;
+	}/*Calls the font awesome icopn*/
 
 
 .entity.entity-entityform-type.entityform-type-entityform-type.clearfix
