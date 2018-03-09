@@ -2,9 +2,9 @@
 
 <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script type="text/javascript" src="../js/modernizr.custom.26633.js"></script>
+<script type="text/javascript" src="sites/all/aesseal_classic/js/modernizr.custom.26633.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-   <script type="text/javascript" src="../js/jquery.gridrotator.js"></script>
+   <script type="text/javascript" src="sites/all/aesseal_classic/js/jquery.gridrotator.js"></script>
    <script type="text/javascript">
      $(function() {
 
