@@ -66,52 +66,6 @@
     hide($content['field_tags']);
     print render($content);
   ?>
-
-  <div class="container">
-
-			<section class="main">
-
-				<div id="ri-grid" class="ri-grid ri-grid-size-4 gallery">
-					<img class="ri-loading-image" src="images/loading.gif"/>
-					<ul>
-						<li><a class="gallery-box" href="#"><img class="" src="images/medium/1t.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-twitter"</span></p></div></div></a></li>
-						<li><a class="gallery-box" href="#"><img class="" src="images/medium/2t.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-twitter"</span></p></div></div></a></li>
-						<li><a class="gallery-box" href="#"><img class="" src="images/medium/3t.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-article"</span></p></div></div></a></li>
-						<li><a class="gallery-box" href="#"><img class="" src="images/medium/4t.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-article"</span></p></div></div></a></li>
-						<li><a class="gallery-box" href="#"><img class="" src="images/medium/5t.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-instagram"</span></p></div></div></a></li>
-            <li><a class="gallery-box" href="#"><img class="" src="images/medium/6t.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-instagram"</span></p></div></div></a></li>
-            <li><a class="gallery-box" href="#"><img class="" src="images/medium/7t.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-instagram"</span></p></div></div></a></li>
-            <li><a class="gallery-box" href="#"><img class="" src="images/medium/8t.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-instagram"</span></p></div></div></a></li>
-            <li><a class="gallery-box" href="#"><img class="" src="images/medium/9t.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-instagram"</span></p></div></div></a></li>
-            <li><a class="gallery-box" href="#"><img class="" src="images/medium/10t.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-instagram"</span></p></div></div></a></li>
-						<li><a class="gallery-box" href="#"><img class="" src="images/medium/1a.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-instagram"</span></p></div></div></a></li>
-						<li><a class="gallery-box" href="#"><img class="" src="images/medium/2a.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-twitter"</span></p></div></div></a></li>
-						<li><a class="gallery-box" href="#"><img class="" src="images/medium/3a.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-twitter"</span></p></div></div></a></li>
-						<li><a class="gallery-box" href="#"><img class="" src="images/medium/4a.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-article"</span></p></div></div></a></li>
-						<li><a class="gallery-box" href="#"><img class="" src="images/medium/5a.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-article"</span></p></div></div></a></li>
-            <li><a class="gallery-box" href="#"><img class="" src="images/medium/6a.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-article"</span></p></div></div></a></li>
-						<li><a class="gallery-box" href="#"><img class="" src="images/medium/1i.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-instagram"</span></p></div></div></a></li>
-						<li><a class="gallery-box" href="#"><img class="" src="images/medium/2i.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-instagram"</span></p></div></div></a></li>
-						<li><a class="gallery-box" href="#"><img class="" src="images/medium/3i.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-twitter"</span></p></div></div></a></li>
-						<li><a class="gallery-box" href="#"><img class="" src="images/medium/4i.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-twitter"</span></p></div></div></a></li>
-						<li><a class="gallery-box" href="#"><img class="" src="images/medium/5i.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-article"</span></p></div></div></a></li>
-						<li><a class="gallery-box" href="#"><img class="" src="images/medium/6i.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-article"</span></p></div></div></a></li>
-						<li><a class="gallery-box" href="#"><img class="" src="images/medium/7i.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-instagram"</span></p></div></div></a></li>
-						<li><a class="gallery-box" href="#"><img class="" src="images/medium/8i.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-instagram"</span></p></div></div></a></li>
-            <li><a class="gallery-box" href="#"><img class="" src="images/medium/9i.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-instagram"</span></p></div></div></a></li>
-            <li><a class="gallery-box" href="#"><img class="" src="images/medium/10i.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-instagram"</span></p></div></div></a></li>
-            <li><a class="gallery-box" href="#"><img class="" src="images/medium/11i.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-instagram"</span></p></div></div></a></li>
-            <li><a class="gallery-box" href="#"><img class="" src="images/medium/12i.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-instagram"</span></p></div></div></a></li>
-            <li><a class="gallery-box" href="#"><img class="" src="images/medium/13i.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-instagram"</span></p></div></div></a></li>
-            <li><a class="gallery-box" href="#"><img class="" src="images/medium/14i.jpg"/><div class="overlay-red"><div class="icon-frame"><p><span class="icon-instagram"</span></p></div></div></a></li>
-
-					</ul>
-				</div>
-
-			</section>
-
-        </div>
-
   <?php if (!empty($content['field_tags']) || !empty($content['links'])): ?>
     <footer>
       <?php print render($content['field_tags']); ?>
