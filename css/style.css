@@ -10214,7 +10214,7 @@ span.carousel-heading
 {
 	margin-bottom: 10px}
 
-	.entitytype-part_number_search-form{
+.entitytype-part_number_search-form .form-actions{
 		background-color: #ffffff;
 		border-top: none;
 	}
