@@ -9,11 +9,11 @@ function aesseal_classic_preprocess_node(&$variables) {
 
 
 function hook_preprocess_page(&$vars) {
-  drupal_add_js('/js/hubspot-progressive-profile.js', 'external');
+  drupal_add_js('../js/hubspot-progressive-profile.js', 'external');
 }
 
 
-function THEMENAME_preprocess_node(&$variables, $hook) {
+function aesseal_classic_preprocess_node(&$variables, $hook) {
   // Node template suggestions based off URL alias
   if (module_exists('path')) {
     $alias = drupal_get_path_alias(str_replace('/edit','',$_GET['q']));
