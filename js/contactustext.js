@@ -1,8 +1,8 @@
 jQuery(document).ready(function($) {
-    var items = ["Find Us", "Follow Us", "Contact Us"],
+    var items = Drupal.t("Find Us", "Follow Us", "Contact Us"),
         $text = $( '#contact-icons-text span' ),
         delay = 2; //seconds
-    
+
     function loop ( delay ) {
         $.each( items, function ( i, elm ){
             $text.delay( delay*1E3).fadeOut();
@@ -13,7 +13,7 @@ jQuery(document).ready(function($) {
             $text.fadeIn();
             $text.queue(function(){
                 if ( i == items.length -1 ) {
-                    loop(delay);   
+                    loop(delay);
                 }
                 $text.dequeue();
             });
