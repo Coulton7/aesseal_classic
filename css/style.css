@@ -9945,7 +9945,9 @@ span.carousel-heading
 	width: 200px;
 	height: 20px;
 	padding-top: 10px;
-	padding-bottom: 10px}
+	padding-bottom: 10px;
+	margin: 1em;
+}
 
 
 .field-name-field-document a:hover, .field-name-field-document a:focus, .field-name-field-document a:active, .field-name-field-document a.active, .field-name-field-document a.disabled, .field-name-field-document a[disabled]
