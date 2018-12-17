@@ -8815,7 +8815,7 @@ h3
 
 .secondary-nav
 {
-	background-image: url('/sites/all/themes/aesseal_classic/images/black-trans.png');
+	background-image: url(../images/black-trans.png);
 	padding-top: 5px;
 	padding-left: 245px;}
 
@@ -10049,7 +10049,7 @@ span.carousel-heading
 .grey-background
 {
 	background-color: #f5f5f5;
-	background-image: url('../images/section-shadow.png');
+	background-image: url(../images/section-shadow.png);
 	background-position: top;
 	background-repeat: no-repeat;
 	margin-top: 0}
@@ -10057,7 +10057,7 @@ span.carousel-heading
 
 .section-shadow
 {
-	background-image: url('../images/section-shadow.png');
+	background-image: url(../images/section-shadow.png);
 	background-position: top;
 	background-repeat: no-repeat;
 	margin-top: 0;
