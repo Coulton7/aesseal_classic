@@ -13,7 +13,7 @@ function hook_preprocess_page(&$vars) {
 }
 
 
-function aesseal_classic_preprocess_node(&$variables, $hook) {
+function THEMENAME_preprocess_node(&$variables, $hook) {
   // Node template suggestions based off URL alias
   if (module_exists('path')) {
     $alias = drupal_get_path_alias(str_replace('/edit','',$_GET['q']));
