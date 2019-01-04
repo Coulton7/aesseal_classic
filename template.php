@@ -31,5 +31,3 @@ function THEMENAME_preprocess_node(&$variables, $hook) {
 /**
  * @file template.php
  */
-
-drupal_add_js('/js/contactustext.js');
